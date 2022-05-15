@@ -1,0 +1,86 @@
+.footer-div {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 2%;
+  background-color: #312a24;
+  color: white;
+  padding-bottom: 50vh;
+}
+.footer-left {
+  /* border: 1px solid red; */
+  text-align: right;
+  padding-right: 30%;
+}
+.footer-left .img-div {
+  /* border: 1px solid red; */
+  margin-left: 65%;
+  width: 30%;
+}
+.footer-right {
+  /* border: 1px solid blue; */
+  justify-content: left;
+  text-align: left;
+}
+.social-icons {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 50%;
+  text-align: right;
+  margin: auto;
+  margin-left: 55%;
+  gap: 10%;
+}
+.social-icons p {
+  /* border: 1px solid red; */
+  width: 30%;
+  /* border-radius: 15px; */
+  /* align-items: center; */
+}
+.address-number {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 2%;
+  width: 60%;
+  height: 7vh;
+}
+.query-email {
+  /* border: 1px solid red; */
+  width: 60%;
+  /* align-items: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.query-email input {
+  width: 83%;
+  height: 5vh;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 15%;
+}
+.query-email button {
+  width: 50%;
+  height: 6vh;
+  padding-top: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: justify;
+  font-size: 13px;
+  background-color: #ff7b51;
+  color: white;
+}
+.copyright-div {
+  /* border: 1px solid red; */
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100% 100%;
+}
+.privacy-policy {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 60%;
+  gap: 10%;
+  margin-left: 30%;
+}

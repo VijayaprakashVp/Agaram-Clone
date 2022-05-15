@@ -1,11 +1,11 @@
 import React from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-// import { FacebookIcon } from "@mui/icons-material/Facebook";
-// import InstagramIcon from "@mui/icons-material/Instagram";
-// import TwitterIcon from "@mui/icons-material/Twitter";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import YouTubeIcon from "@mui/icons-material/YouTube";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 export const NavBar = () => {
   return (
@@ -15,17 +15,22 @@ export const NavBar = () => {
         <div className="have_queries">
           Have any queries? Whatsapp us at +91-98418 91000
           <div className="social-media-icon">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
+            <p>
+              <FacebookIcon />
+            </p>
+            <p>
+              <InstagramIcon />
+            </p>
+            <p>
+              <YouTubeIcon />
+            </p>
+            <p>
+              <TwitterIcon />
+            </p>
+            <p>
+              <LinkedInIcon />
+            </p>
           </div>
-          {/* <FacebookIcon />
-          <InstagramIcon />
-          <YouTubeIcon />
-          <TwitterIcon />
-          <LinkedInIcon /> */}
         </div>
       </div>
       <div className="logo_menu">

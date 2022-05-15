@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Footer } from "../Footer/Footer";
 import { NavBar } from "../NavBar/NavBar";
 
 import "./Home.css";
@@ -164,6 +165,12 @@ export const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Footer Page Div */}
+
+      <div>
+        <Footer />
       </div>
     </div>
   );
