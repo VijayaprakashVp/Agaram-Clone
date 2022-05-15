@@ -124,7 +124,7 @@
   color: white;
 }
 .recent-social-updates {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: left;
   width: 90%;
   margin: auto;
@@ -133,12 +133,33 @@
   margin-bottom: 3%;
 }
 .social-updates {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: repeat(3, 32%);
   gap: 1%;
 }
 .social-updates h3 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
+}
+/* .Agaram-Foundation-video {
+  position: absolute; 
+  border: 1px solid red;
+} */
+.play-btn {
+  /* border: 2px solid red; */
+  position: relative;
+  font-size: 20px;
+  top: -275px;
+  color: #bb3702;
+  font-size: 20px;
+  cursor: pointer;
+}
+.social-updates img {
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-left: 1%;
+}
+.social-updates .fb {
+  margin-left: 5%;
 }

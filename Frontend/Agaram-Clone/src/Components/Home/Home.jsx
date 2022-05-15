@@ -4,6 +4,9 @@ import { Footer } from "../Footer/Footer";
 import { NavBar } from "../NavBar/NavBar";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
+import PlayCircleTwoToneIcon from "@mui/icons-material/PlayCircleTwoTone";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 import "./Home.css";
 
@@ -68,12 +71,17 @@ export const Home = () => {
             </p>
           </div>
           <div className="Agaram-Foundation-video">
-            <Link to={"/agaram-video"}>
+            <Link to={"/agaram-foundation-video"}>
               <img
                 src="https://s1.agaram.in/img/webp-img/video-img.webp"
                 alt=""
               />
             </Link>
+            <p>
+              <Link to={"/agaram-foundation-video"}>
+                <PlayCircleTwoToneIcon className="play-btn" />
+              </Link>
+            </p>
           </div>
         </div>
         <div className="vision">
@@ -182,9 +190,15 @@ export const Home = () => {
           <div className="social-updates">
             <div>
               <h3>FaceBook</h3>
+              <img
+                src="https://i.ibb.co/vqQKPfg/Screenshot-25.png"
+                alt=""
+                className="fb"
+              />
             </div>
             <div>
               <h3>Tweets</h3>
+              <img src="https://i.ibb.co/9nnGVZh/Screenshot-26.png" alt="" />
             </div>
             <div>
               <h3>Instagram Feeds</h3>

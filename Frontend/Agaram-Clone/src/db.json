@@ -1,0 +1,16 @@
+{
+  "queries": [
+    {
+      "email": "vijayaprakash@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "vijay@gmail.com",
+      "id": 2
+    },
+    {
+      "email": "test1@gmail.com",
+      "id": 3
+    }
+  ]
+}

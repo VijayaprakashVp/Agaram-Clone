@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -11,6 +11,22 @@ import DraftsIcon from "@mui/icons-material/Drafts";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
+  const [email, setEmail] = useState("");
+  console.log("email:", email);
+
+  const handleSubmit = () => {
+    fetch(`http://localhost:8080/queries`, {
+      method: "POST",
+      body: JSON.stringify({ email }),
+      headers: {
+        "Content-Type": "Application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div>
       {/* <div className="map">
@@ -112,10 +128,17 @@ export const Footer = () => {
             </div>
             <div className="query-email">
               <p>
-                <input type="text" placeholder="Enter Email" />
+                <input
+                  type="text"
+                  placeholder="Enter Email"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
               </p>
               <p>
-                <button>Submit</button>
+                <button onClick={handleSubmit}>Submit</button>
               </p>
             </div>
           </div>
@@ -124,7 +147,8 @@ export const Footer = () => {
               <p>
                 2022
                 <span style={{ fontWeight: "600", color: "white" }}>
-                  Agaram
+                  {" "}
+                  Makkal Iyakam
                 </span>
                 . All rights reserved. Powered By{" "}
                 <span style={{ fontWeight: "600", color: "white" }}>Gyso</span>.
