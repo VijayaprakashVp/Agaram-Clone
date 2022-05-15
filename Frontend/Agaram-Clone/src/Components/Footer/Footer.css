@@ -6,7 +6,7 @@
   padding-top: 2%;
   background-color: #312a24;
   color: white;
-  padding-bottom: 50vh;
+  padding-bottom: 2%;
 }
 .footer-left {
   /* border: 1px solid red; */
@@ -59,10 +59,12 @@
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   padding-left: 15%;
+  background-color: transparent;
+  border: 1px solid white;
 }
 .query-email button {
   width: 50%;
-  height: 6vh;
+  height: 5.5vh;
   padding-top: 10px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -70,6 +72,8 @@
   font-size: 13px;
   background-color: #ff7b51;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 .copyright-div {
   /* border: 1px solid red; */
