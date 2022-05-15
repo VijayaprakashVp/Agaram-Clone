@@ -21,7 +21,10 @@ export const Footer = () => {
           <div className="footer-left">
             <div className="img-div">
               <Link to={"/"}>
-                <img src="https://s1.agaram.in/img/lazy/dlogo.png" alt="" />
+                <img
+                  src="https://i.ibb.co/6FGnj3B/Image20220515180845.jpg"
+                  alt=""
+                />
               </Link>
             </div>
             <h1>

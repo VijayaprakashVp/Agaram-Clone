@@ -18,6 +18,10 @@
   margin-left: 65%;
   width: 30%;
 }
+.img-div img {
+  width: 100%;
+  border-radius: 5px;
+}
 .footer-right {
   /* border: 1px solid blue; */
   justify-content: left;

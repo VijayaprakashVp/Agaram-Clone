@@ -37,7 +37,7 @@ export const NavBar = () => {
         <div>
           <Link to={"/"}>
             <img
-              src="https://s1.agaram.in/img/webp-img/agaram_logo.webp"
+              src="https://i.ibb.co/6FGnj3B/Image20220515180845.jpg"
               alt=""
             />
           </Link>

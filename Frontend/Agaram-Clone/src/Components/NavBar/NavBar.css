@@ -21,6 +21,10 @@
   color: rgb(50, 50, 204);
   cursor: pointer;
 }
+.logo_menu img {
+  /* border: 1px solid red; */
+  width: 100%;
+}
 .have_queries {
   /* border: 1px solid black; */
   background-color: #ff5722;
@@ -62,8 +66,9 @@
 }
 .logo_menu img {
   /* border: 1px solid red; */
+  border-radius: 5px;
   margin-left: -10%;
-  margin-top: -33%;
+  margin-top: -45%;
 }
 .menu-list {
   /* border: 1px solid black; */
