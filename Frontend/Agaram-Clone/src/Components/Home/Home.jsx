@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Footer } from "../Footer/Footer";
 import { NavBar } from "../NavBar/NavBar";
+import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 import "./Home.css";
 
 export const Home = () => {
+  var [slideshowcount, setSlideshowcount] = useState(0);
+
+  let images = [
+    "https://s1.agaram.in/img/webp-img/agaram_slider-s1.webp",
+    "https://s1.agaram.in/img/webp-img/agaram_slider-s2.webp",
+  ];
+
+  // console.log("slideshowcount previous:", slideshowcount);
+  const handleChangeImage = () => {
+    if (slideshowcount == images.length - 1) {
+      // console.log("slideshowcount :", slideshowcount);
+      return setSlideshowcount(0);
+    }
+    slideshowcount += 1;
+    setSlideshowcount(slideshowcount);
+  };
+
   return (
     <div>
       <div>
@@ -13,8 +32,15 @@ export const Home = () => {
       </div>
       <div>
         <div className="slideshow-div">
-          {/* <img src="https://s1.agaram.in/img/webp-img/agaram_slider-s1.webp" alt="" />
-          <img src="https://s1.agaram.in/img/webp-img/agaram_slider-s2.webp" alt="" /> */}
+          <img src={images[slideshowcount]} alt="" />
+          <div>
+            <button onClick={handleChangeImage}>
+              <NavigateBeforeIcon />
+            </button>
+            <button onClick={handleChangeImage}>
+              <ChevronRightIcon />
+            </button>
+          </div>
         </div>
         <div className="Agaram-Foundation">
           <div className="Agaram-Foundation-text">

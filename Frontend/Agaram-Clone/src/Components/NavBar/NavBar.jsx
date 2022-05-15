@@ -52,7 +52,10 @@ export const NavBar = () => {
           <p>Agaram Tv</p>
           <p>FAQ</p>
           <p>Contact</p>
-          <Link to={"/Donate"} style={{ textDecoration: "none" }}>
+          <Link
+            to={"/Donate"}
+            style={{ textDecoration: "none", transition: "none" }}
+          >
             <p className="donate-menu">Donate</p>
           </Link>
         </div>

@@ -93,4 +93,6 @@
   justify-content: center;
   background-color: #ff5722;
   color: white;
+  transform: none;
+  transition: none;
 }

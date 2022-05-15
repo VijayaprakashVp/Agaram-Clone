@@ -1,8 +1,41 @@
 .slideshow-div {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 1% 0%;
-  height: 75vh;
-  margin-bottom: 1%;
+  /* height: 75vh; */
+  padding-bottom: 2%;
+  /* margin-bottom: 5%; */
+  /* position: absolute; */
+}
+.slideshow-div img {
+  width: 100%;
+}
+.slideshow-div img {
+  transition: all;
+  transform: 0.2s ease-in-out 0s;
+}
+.slideshow-div div {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  margin: auto;
+  left: 2%;
+  background-color: transparent;
+  display: flex;
+  gap: 100%;
+}
+.slideshow-div button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.slideshow-div div button:nth-child(1) {
+  background-color: #fa4207;
+  border: none;
+}
+.slideshow-div div button:nth-child(2) {
+  background-color: #bb3702;
+  border: none;
 }
 .Agaram-Foundation {
   /* border: 1px solid red; */
