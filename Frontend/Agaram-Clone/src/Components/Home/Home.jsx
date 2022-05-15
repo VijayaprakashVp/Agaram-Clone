@@ -104,7 +104,64 @@ export const Home = () => {
         </div>
         <div className="change-a-life">
           <div>
-            <h1>Your Small Help will #changealife</h1>
+            <h1>
+              <Link to={"#"} style={{ textDecoration: "none", color: "white" }}>
+                Your Small Help will{" "}
+                <span
+                  style={{
+                    color: "#ff5722",
+                    fontFamily: "caveat,cursive",
+                    // fontSize: "50px",
+                    fontStyle: "italic",
+                  }}
+                >
+                  #change
+                </span>
+                a
+                <span
+                  style={{
+                    color: "#ff5722",
+                    fontFamily: "caveat,cursive",
+                    // fontSize: "50px",
+                    fontStyle: "italic",
+                  }}
+                >
+                  life
+                </span>
+              </Link>
+            </h1>
+          </div>
+        </div>
+        <div className="recent-social-updates">
+          <h1>
+            Recent
+            <span
+              style={{
+                color: "#ff5722",
+              }}
+            >
+              Social
+            </span>
+            Updates
+            <hr
+              style={{
+                width: "8%",
+                marginLeft: "9%",
+                color: "black",
+                border: "1px solid black",
+              }}
+            />
+          </h1>
+          <div className="social-updates">
+            <div>
+              <h3>FaceBook</h3>
+            </div>
+            <div>
+              <h3>Tweets</h3>
+            </div>
+            <div>
+              <h3>Instagram Feeds</h3>
+            </div>
           </div>
         </div>
       </div>
